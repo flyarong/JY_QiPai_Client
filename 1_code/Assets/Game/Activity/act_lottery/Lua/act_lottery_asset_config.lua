@@ -1,0 +1,1 @@
+return {"CommonLotteryPanel","Common_lottery_cfg","CommonLotteryPanel_xx","ad_45_1","ad_45_2_activity_act_lottery","ad_45_3","ad_45_4","ad_45_5","ad_45_6","com_pc_icon_jb1_activity_act_lottery","gy_33_6_activity_act_lottery"}

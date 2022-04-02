@@ -1,0 +1,188 @@
+-- 创建时间:2021-07-05
+
+return {
+    lotterys = 
+    {
+        [1] = {
+            lottery_item = "prop_fish_drop_act_0",
+            lottery_consume = 200,
+            image = "fkcdj_icon_lh",
+            box_change_id = 200,
+        },
+        [2] = {
+            lottery_item = "shop_gold_sum",
+            lottery_consume = 200,
+            image = "bzdh_icon_hb",
+            box_change_id = 201,
+        },
+    },
+    awards = {
+        [1] = {
+            ID = 1,
+            name = "苹果13",
+            count = "1",
+            image = "activity_icon_gift306_pg13",
+            award_id = 13429,
+        },
+        [2] = {
+            ID = 2,
+            name = "电热毯",
+            count = "1",
+            image = "activity_icon_gift307_drt",
+            award_id = 13430,
+        },
+        [3] = {
+            ID = 3,
+            name = "小太阳",
+            count = "1",
+            image = "activity_icon_gift245_xty",
+            award_id = 13431,
+        },
+        [4] = {
+            ID = 4,
+            name = "大米",
+            count = "1",
+            image = "activity_icon_gift308_jlydm",
+            award_id = 13432,
+        },
+        [5] = {
+            ID = 5,
+            name = "大豆油",
+            count = "1",
+            image = "activity_icon_gift227_ddy",
+            award_id = 13433,
+        },
+        [6] = {
+            ID = 6,
+            name = "大枣夹核桃",
+            count = "1",
+            image = "activity_icon_gift217_dzjht",
+            award_id = 13434,
+        },
+        [7] = {
+            ID = 7,
+            name = "鸡蛋面",
+            count = "1",
+            image = "activity_icon_gift223_jlyjdm",
+            award_id = 13435,
+        },
+        [8] = {
+            ID = 8,
+            name = "鲸币",
+            count = "10万~20万",
+            image = "pay_icon_gold7",
+            award_id = 13436,
+        },
+        [9] = {
+            ID = 9,
+            name = "鱼币",
+            count = "10万~20万",
+            image = "com_icon_yb",
+            award_id = 13437,
+        },
+        [10] = {
+            ID = 10,
+            name = "高级游戏卡碎片",
+            count = "5~15",
+            image = "sp_icon_dj3",
+            award_id = 13438,
+        },
+        [11] = {
+            ID = 11,
+            name = "10元充值优惠券",
+            count = "1",
+            image = "com_award_icon_czyhq2",
+            award_id = 13439,
+        },
+        [12] = {
+            ID = 12,
+            name = "中级游戏卡碎片",
+            count = "5~15",
+            image = "sp_icon_dj2",
+            award_id = 13440,
+        },
+        [13] = {
+            ID = 13,
+            name = "鲸币",
+            count = "1万~3万",
+            image = "pay_icon_gold6",
+            award_id = 13441,
+        },
+        [14] = {
+            ID = 14,
+            name = "鱼币",
+            count = "1万~3万",
+            image = "com_icon_yb",
+            award_id = 13442,
+        },
+        [15] = {
+            ID = 15,
+            name = "初级游戏卡碎片",
+            count = "5~15",
+            image = "sp_icon_dj1",
+            award_id = 13443,
+        },
+        [16] = {
+            ID = 16,
+            name = "话费碎片",
+            count = "50~100",
+            image = "com_award_icon_hfsp2",
+            award_id = 13444,
+        },
+        [17] = {
+            ID = 17,
+            name = "话费碎片",
+            count = "30~70",
+            image = "com_award_icon_hfsp",
+            award_id = 13445,
+        },
+        [18] = {
+            ID = 18,
+            name = "鲸币",
+            count = "3000~7000",
+            image = "pay_icon_gold5",
+            award_id = 13446,
+        },
+        [19] = {
+            ID = 19,
+            name = "鱼币",
+            count = "3000~7000",
+            image = "com_icon_yb",
+            award_id = 13447,
+        },
+        [20] = {
+            ID = 20,
+            name = "话费碎片",
+            count = "10~30",
+            image = "com_award_icon_hfsp",
+            award_id = 13448,
+        },
+    },
+    boxs = {
+        [1] = {
+            times = 10,
+            tip_name = "鲸币宝箱",
+            tip_desc = "随机获得1~5万鲸币",
+        },
+        [2] = {
+            times = 50,
+            tip_name = "鲸币宝箱",
+            tip_desc = "随机获得3~10万鲸币",
+        },
+        [3] = {
+            times = 100,
+            tip_name = "鲸币宝箱",
+            tip_desc = "随机获得4~15万鲸币",
+        },
+        [4] = {
+            times = 200,
+            tip_name = "鲸币宝箱",
+            tip_desc = "随机获得8~30万鲸币",
+        },
+        [5] = {
+            times = 500,
+            tip_name = "福卡宝箱",
+            tip_desc = "随机获得20~100福卡",
+        },
+    }
+}

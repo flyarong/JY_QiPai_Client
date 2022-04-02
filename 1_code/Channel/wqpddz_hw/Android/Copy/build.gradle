@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
+
+android {
+	compileSdkVersion 28
+	buildToolsVersion '28.0.3'
+
+	defaultConfig {
+		minSdkVersion 17
+		targetSdkVersion 28
+		applicationId 'com.wqpddz.huawei'
+		ndk {
+			abiFilters 'armeabi-v7a', 'x86'
+		}
+	}
+
+	lintOptions {
+		abortOnError false
+	}
+
+	aaptOptions {
+		noCompress '.unity3d', '.ress', '.resource', '.obb','atb.txt','extract.txt','file_list.txt','lua.unity3d','lua.unity3d.manifest','streamingassets','streamingassets.manifest','udf.txt','common/common.unity3d','common/common.unity3d.manifest','common/file_list.txt','common/udf.txt','commonprefab/commonprefab_animation.unity3d','commonprefab/commonprefab_animation.unity3d.manifest','commonprefab/commonprefab_font.unity3d','commonprefab/commonprefab_font.unity3d.manifest','commonprefab/commonprefab_image.unity3d','commonprefab/commonprefab_image.unity3d.manifest','commonprefab/commonprefab_lua.unity3d','commonprefab/commonprefab_lua.unity3d.manifest','commonprefab/commonprefab_prefab.unity3d','commonprefab/commonprefab_prefab.unity3d.manifest','commonprefab/file_list.txt','commonprefab/udf.txt','framework/file_list.txt','framework/framework.unity3d','framework/framework.unity3d.manifest','framework/udf.txt','game_ddzmatch/file_list.txt','game_ddzmatch/game_ddzmatch.unity3d','game_ddzmatch/game_ddzmatch.unity3d.manifest','game_ddzmatch/game_ddzmatch_animation.unity3d','game_ddzmatch/game_ddzmatch_animation.unity3d.manifest','game_ddzmatch/game_ddzmatch_audio.unity3d','game_ddzmatch/game_ddzmatch_audio.unity3d.manifest','game_ddzmatch/game_ddzmatch_font.unity3d','game_ddzmatch/game_ddzmatch_font.unity3d.manifest','game_ddzmatch/game_ddzmatch_image.unity3d','game_ddzmatch/game_ddzmatch_image.unity3d.manifest','game_ddzmatch/game_ddzmatch_image_banner.unity3d','game_ddzmatch/game_ddzmatch_image_banner.unity3d.manifest','game_ddzmatch/game_ddzmatch_image_matchdeatil.unity3d','game_ddzmatch/game_ddzmatch_image_matchdeatil.unity3d.manifest','game_ddzmatch/game_ddzmatch_image_matchwait.unity3d','game_ddzmatch/game_ddzmatch_image_matchwait.unity3d.manifest','game_ddzmatch/game_ddzmatch_lua.unity3d','game_ddzmatch/game_ddzmatch_lua.unity3d.manifest','game_ddzmatch/game_ddzmatch_particle.unity3d','game_ddzmatch/game_ddzmatch_particle.unity3d.manifest','game_ddzmatch/game_ddzmatch_prefab.unity3d','game_ddzmatch/game_ddzmatch_prefab.unity3d.manifest','game_ddzmatch/game_ddzmatch_scene.unity3d','game_ddzmatch/game_ddzmatch_scene.unity3d.manifest','game_ddzmatch/udf.txt','game_hall/file_list.txt','game_hall/game_hall_animation.unity3d','game_hall/game_hall_animation.unity3d.manifest','game_hall/game_hall_audio.unity3d','game_hall/game_hall_audio.unity3d.manifest','game_hall/game_hall_font.unity3d','game_hall/game_hall_font.unity3d.manifest','game_hall/game_hall_image.unity3d','game_hall/game_hall_image.unity3d.manifest','game_hall/game_hall_lua.unity3d','game_hall/game_hall_lua.unity3d.manifest','game_hall/game_hall_particle.unity3d','game_hall/game_hall_particle.unity3d.manifest','game_hall/game_hall_prefab.unity3d','game_hall/game_hall_prefab.unity3d.manifest','game_hall/game_hall_prefab_bag.unity3d','game_hall/game_hall_prefab_bag.unity3d.manifest','game_hall/game_hall_prefab_loading.unity3d','game_hall/game_hall_prefab_loading.unity3d.manifest','game_hall/game_hall_prefab_notify.unity3d','game_hall/game_hall_prefab_notify.unity3d.manifest','game_hall/game_hall_scene.unity3d','game_hall/game_hall_scene.unity3d.manifest','game_hall/udf.txt','game_loding/file_list.txt','game_loding/game_loding_lua.unity3d','game_loding/game_loding_lua.unity3d.manifest','game_loding/game_loding_prefab.unity3d','game_loding/game_loding_prefab.unity3d.manifest','game_loding/game_loding_scene.unity3d','game_loding/game_loding_scene.unity3d.manifest','game_loding/udf.txt','game_login/file_list.txt','game_login/game_login.unity3d','game_login/game_login.unity3d.manifest','game_login/game_login_animation.unity3d','game_login/game_login_animation.unity3d.manifest','game_login/game_login_audio.unity3d','game_login/game_login_audio.unity3d.manifest','game_login/game_login_font.unity3d','game_login/game_login_font.unity3d.manifest','game_login/game_login_image.unity3d','game_login/game_login_image.unity3d.manifest','game_login/game_login_lua.unity3d','game_login/game_login_lua.unity3d.manifest','game_login/game_login_particle.unity3d','game_login/game_login_particle.unity3d.manifest','game_login/game_login_prefab.unity3d','game_login/game_login_prefab.unity3d.manifest','game_login/game_login_scene.unity3d','game_login/game_login_scene.unity3d.manifest','game_login/udf.txt','normal_ddz_common/file_list.txt','normal_ddz_common/normal_ddz_common_animation.unity3d','normal_ddz_common/normal_ddz_common_animation.unity3d.manifest','normal_ddz_common/normal_ddz_common_audio.unity3d','normal_ddz_common/normal_ddz_common_audio.unity3d.manifest','normal_ddz_common/normal_ddz_common_image.unity3d','normal_ddz_common/normal_ddz_common_image.unity3d.manifest','normal_ddz_common/normal_ddz_common_lua.unity3d','normal_ddz_common/normal_ddz_common_lua.unity3d.manifest','normal_ddz_common/normal_ddz_common_prefab.unity3d','normal_ddz_common/normal_ddz_common_prefab.unity3d.manifest','normal_ddz_common/udf.txt','sproto/file_list.txt','sproto/sproto.unity3d','sproto/sproto.unity3d.manifest','sproto/udf.txt'
+	}
+
+	signingConfigs { release {
+		storeFile file('jjhy.keystore')
+		storePassword "jjhyRrDdz_123"
+		keyAlias "jyddz"
+		keyPassword "jjhyRrDdz@666"
+		v2SigningEnabled false
+	} }
+
+	buildTypes {
+		debug {
+			minifyEnabled false
+			useProguard false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-unity.txt', "proguard-rules.pro"
+			jniDebuggable true
+			signingConfig signingConfigs.release
+		}
+		release {
+			minifyEnabled false
+			useProguard false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-unity.txt', "proguard-rules.pro"
+			signingConfig signingConfigs.release
+		}
+	}
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+	}
+
+	configurations.all {
+		resolutionStrategy {
+			cacheDynamicVersionsFor 0, "seconds"
+			cacheChangingModulesFor 0, "seconds"
+		}
+	}
+
+	android.applicationVariants.all { variant ->
+		variant.outputs.all {
+			variant.getPackageApplicationProvider().get().outputDirectory = new File(project.rootDir.absolutePath + "/build/outputs/apk");
+		}
+	}
+}
+
+// GENERATED BY UNITY. REMOVE THIS COMMENT TO PREVENT OVERWRITING WHEN EXPORTING AGAIN
+buildscript {
+	repositories {
+        google()
+        jcenter()
+        maven {url 'http://developer.huawei.com/repo/'}
+	}
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath 'com.huawei.agconnect:agcp:1.0.0.300'
+    }
+}
+
+allprojects {
+   repositories {
+       google()
+       jcenter()
+       maven { url "https://jitpack.io" }
+       maven {url 'http://developer.huawei.com/repo/'}
+       flatDir {
+         dirs 'libs'
+       }
+    }
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    tasks.withType(Javadoc) {
+        options.encoding = 'UTF-8'
+    }
+}
+
+dependencies {
+	implementation 'io.reactivex.rxjava2:rxjava:2.0.1'
+	implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+	implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar'
+
+	implementation fileTree(include: ['*.jar'], dir: 'libs')
+	implementation project(':unity-android-resources')
+	implementation 'androidx.appcompat:appcompat:1.0.2'
+	api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+
+	implementation 'com.android.support:support-v4:28.0.0'
+	implementation 'com.android.support:support-annotations:28.0.0'
+	implementation 'com.android.support:support-fragment:28.0.0'
+	implementation 'com.huawei.hms:game:4.0.0.300'
+	implementation 'com.huawei.hms:base:4.0.0.300'
+	implementation 'com.huawei.hms:hwid:4.0.0.300'
+	implementation 'com.huawei.hms:iap:4.0.0.300'
+	implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
+	implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+	//api 'com.jakewharton:butterknife:8.5.1'
+	//annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+	//implementation 'com.jakewharton:butterknife:10.0.0'
+
+	implementation 'com.android.support:design:28.0.0-alpha1'
+	implementation 'com.android.support:recyclerview-v7:28.0.0'
+	implementation 'com.github.bumptech.glide:glide:4.8.0'
+	implementation 'com.github.wildma:PictureSelector:1.1.3'
+}

@@ -1,0 +1,199 @@
+-- 创建时间:2019-05-27
+-- Panel:ActivityShop10009Panel
+--[[
+ *      ┌─┐       ┌─┐
+ *   ┌──┘ ┴───────┘ ┴──┐
+ *   │                 │
+ *   │       ───       │
+ *   │  ─┬┘       └┬─  │
+ *   │                 │
+ *   │       ─┴─       │
+ *   │                 │
+ *   └───┐         ┌───┘
+ *       │         │
+ *       │         │
+ *       │         │
+ *       │         └──────────────┐
+ *       │                        │
+ *       │                        ├─┐
+ *       │                        ┌─┘
+ *       │                        │
+ *       └─┐  ┐  ┌───────┬──┐  ┌──┘
+ *         │ ─┤ ─┤       │ ─┤ ─┤
+ *         └──┴──┘       └──┴──┘
+ *                神兽保佑
+ *               代码无BUG!
+ --]]
+-- 屠龙礼包
+local basefunc = require "Game/Common/basefunc"
+
+SH_GiftPanel = basefunc.class()
+local C = SH_GiftPanel
+C.name = "SH_GiftPanel"
+
+local instance
+local shopids = {10034,10035,10036}
+local maskImg = {"gy_63_6","gy_63_7","gy_63_8"}
+function C.Create(parent, backcall)
+	if not instance then
+		instance = C.New(parent, backcall)
+	else
+		instance:MyRefresh()
+	end
+	return instance
+end
+
+function C:AddMsgListener()
+    for proto_name,func in pairs(self.lister) do
+        Event.AddListener(proto_name, func)
+    end
+end
+
+function C:MakeLister()
+	self.lister = {}
+	self.lister["EnterForeGround"] = basefunc.handler(self, self.onEnterForeGround)
+	self.lister["EnterBackGround"] = basefunc.handler(self, self.onEnterBackGround)
+	self.lister["ExitScene"] = basefunc.handler(self, self.OnExitScene)
+	self.lister["ReConnecteServerSucceed"] = basefunc.handler(self, self.ReConnecteServerSucceed)
+	for i=1,#shopids do
+		self.lister["finish_gift_shop_shopid_" .. shopids[i]] = basefunc.handler(self, self.finish_gift_shop_shopid)
+	end
+
+end
+
+function C:RemoveListener()
+    for proto_name,func in pairs(self.lister) do
+        Event.RemoveListener(proto_name, func)
+    end
+    self.lister = {}
+end
+
+function C:MyExit()
+	destroy(self.gameObject)
+	self:RemoveListener()
+	instance=nil
+end
+
+function C:ctor(parent, backcall)
+
+	ExtPanel.ExtMsg(self)
+
+	self.backcall = backcall
+	local parent = parent or GameObject.Find("Canvas/LayerLv4").transform
+	local obj = newObject(C.name, parent)
+	local tran = obj.transform
+	self.transform = tran
+	self.gameObject = obj
+	LuaHelper.GeneratingVar(self.transform, self)
+	self:MakeLister()
+	self:AddMsgListener()
+
+	self.BackButton = tran:Find("BackButton"):GetComponent("Button")
+	self.BackButton.onClick:AddListener(function ()
+        ExtendSoundManager.PlaySound(audio_config.game.com_but_cancel.audio_name)
+		self:OnBackClick()
+	end)
+	self.TimeText=self.transform:Find("Time/Text"):GetComponent("Text")
+	self.Buttons = {}
+	self.sh_48_btn.onClick:AddListener(
+		function ()
+			self:OnShopClick(1)
+		end
+	)
+	self.sh_98_btn.onClick:AddListener(
+		function ()
+			self:OnShopClick(2)
+		end
+	)
+	self.sh_198_btn.onClick:AddListener(
+		function ()
+			self:OnShopClick(3)
+		end
+	)	
+	self.Buttons[1] =  self.sh_48_btn
+	self.Buttons[2] =  self.sh_98_btn	
+	self.Buttons[3] =  self.sh_198_btn	
+
+	self:InitUI()
+	self:UpdateTime()
+end
+
+function C:UpdateTime()
+	-- local starttime=os.date("%m月%d日%H:%M",self.gift_config.start_time)
+	-- local endtime=os.date("%m月%d日%H:%M",self.gift_config.end_time)
+	-- self.TimeText.text=starttime.."-"..endtime
+end
+
+function C:InitUI()
+	self:MyRefresh()
+end
+
+function C:MyRefresh()
+	for i=1,#shopids do
+		local shopid =shopids[i]
+		local gift_config = MainModel.GetShopingConfig(GOODS_TYPE.gift_bag, shopid)
+		local status = MainModel.GetGiftShopStatusByID(gift_config.id)
+		if status == 0 then
+			self.Buttons[i].gameObject.transform:GetComponent("Image").sprite = GetTexture(maskImg[i])
+		else
+		
+		end 
+	end
+end
+
+function C:OnBackClick()
+	self:MyExit()
+	if self.backcall then
+		self.backcall()
+	end
+end
+
+function C:OnShopClick(index)
+	local shopid =shopids[index]
+	self.gift_config = MainModel.GetShopingConfig(GOODS_TYPE.gift_bag, shopid)
+	self.status = MainModel.GetGiftShopStatusByID(self.gift_config.id)
+    local b1 = MathExtend.isTimeValidity(self.gift_config.start_time, self.gift_config.end_time)
+
+    if b1 then
+		if self.status ~= 1 then
+			local gift_config = MainModel.GetShopingConfig(GOODS_TYPE.gift_bag, shopid)
+			local s1 = os.date("%m月%d日%H点", self.gift_config.start_time)
+			local e1 = os.date("%m月%d日%H点", self.gift_config.end_time)
+			HintPanel.Create(1, string.format( "您今日已购买过了，请明日再来购买。\n(%s-%s每天可购买1次)",s1,e1))
+			return
+		end
+    else
+		HintPanel.Create(1, "抱歉，此商品不在售卖时间内")
+		return
+    end
+    
+	if GameGlobalOnOff.PGPay and gameRuntimePlatform == "Ios" then
+		GameManager.GotoUI({gotoui = "sys_service_gzh",goto_scene_parm = "panel",desc="请前往公众号获取"})
+	else
+		PayTypePopPrefab.Create(self.gift_config.id, "￥" .. (self.gift_config.price / 100))
+	end
+end
+
+function C:ReConnecteServerSucceed()
+	self:MyRefresh()
+end
+
+function C:finish_gift_shop_shopid()
+	self.status = 0
+	self:MyRefresh()
+end
+
+function C:OnExitScene()
+	self:MyExit()
+end
+
+function C:onEnterForeGround()
+	self:MyRefresh()
+end
+
+function C:onEnterBackGround()
+	--[[if self.update_time then
+		self.update_time:Stop()
+	end
+	self.update_time = nil]]--
+end

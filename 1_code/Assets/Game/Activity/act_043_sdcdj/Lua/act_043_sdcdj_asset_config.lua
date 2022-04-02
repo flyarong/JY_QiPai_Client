@@ -1,0 +1,1 @@
+return {"activity_043_sdcdj_config","Act_043_SDCDJManager","Act_043_SDCDJPanel","activity_icon_gift251_jly","com_award_icon_hfsp2","gy_33_6_activity_act_043_sdcdj","sdcdj_bg_1","sdcdj_bg_2","sdcdj_bg_3","sdcdj_bg_4","sdcdj_bg_5","sdcdj_bg_sdcdj","sdcdj_btn_1","sdcdj_btn_2","sdcdj_btn_gz","sdlw_bg_tsk_activity_act_043_sdcdj"}

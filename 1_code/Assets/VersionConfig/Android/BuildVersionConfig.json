@@ -1,0 +1,468 @@
+{
+    "svr_list": [
+        "http://jydown.jyhd919.cn/jydown/Version2019/V13/",
+        "http://cdnjydown.jyhd919.cn/jydown/Version2019/V13/"
+    ],
+    "svr_data": [
+        "http://cdnjydown.jyhd919.cn/jydown/Version2019/V13/",
+        "http://jydown.jyhd919.cn/jydown/Version2019/V13/"
+    ],
+    "svr_game": [
+        "jygate.jyhd919.cn:5101"
+    ],
+    "Version": "13.1.1",
+    "options": [
+        {
+            "rootDir": "CommonPrefab",
+            "useBasicVersion": true,
+            "isExtract": true,
+            "dependList": []
+        },
+        {
+            "rootDir": "game_Hall",
+            "useBasicVersion": true,
+            "isExtract": true,
+            "dependList": []
+        },
+        {
+            "rootDir": "game_Free",
+            "useBasicVersion": true,
+            "isExtract": true,
+            "dependList": [
+                "normal_free_common"
+            ]
+        },
+        {
+            "rootDir": "game_DdzFree",
+            "useBasicVersion": true,
+            "isExtract": true,
+            "dependList": [
+                "normal_ddz_common",
+                "normal_free_common",
+                "game_Free",
+                "game_DdzTy",
+                "game_DdzPDK"
+            ]
+        },
+        {
+            "rootDir": "game_DdzTy",
+            "useBasicVersion": true,
+            "isExtract": true,
+            "dependList": [
+                "normal_ddz_common",
+                "game_Free",
+                "game_DdzFree",
+                "game_DdzPDK",
+                "normal_free_common"
+            ]
+        },
+        {
+            "rootDir": "game_DdzPDK",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_ddz_common",
+                "game_Free",
+                "game_DdzFree",
+                "game_DdzTy",
+                "normal_free_common"
+            ]
+        },
+        {
+            "rootDir": "game_Mj3D",
+            "useBasicVersion": true,
+            "isExtract": true,
+            "dependList": [
+                "normal_mj_common",
+                "game_Free",
+                "game_MjXl3D",
+                "normal_free_common"
+            ]
+        },
+        {
+            "rootDir": "game_MjXl3D",
+            "useBasicVersion": true,
+            "isExtract": true,
+            "dependList": [
+                "normal_mj_common",
+                "game_Free",
+                "game_Mj3D",
+                "normal_free_common"
+            ]
+        },
+        {
+            "rootDir": "game_MatchHall",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_commatch_common",
+                "normal_fishing_common"
+            ]
+        },
+        {
+            "rootDir": "game_DdzMatch",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_ddz_common",
+                "normal_commatch_common",
+                "game_MatchHall",
+                "game_DdzPDKMatch",
+                "normal_comfishing_common",
+                "normal_fishing_common"
+            ]
+        },
+        {
+            "rootDir": "game_DdzPDKMatch",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_ddz_common",
+                "normal_commatch_common",
+                "game_MatchHall",
+                "game_DdzMatch",
+                "normal_comfishing_common",
+                "normal_fishing_common"
+            ]
+        },
+        {
+            "rootDir": "game_MjXzMatchER3D",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_mj_common",
+                "normal_commatch_common",
+                "game_MatchHall",
+                "normal_comfishing_common",
+                "normal_fishing_common"
+            ]
+        },
+        {
+            "rootDir": "game_ZJF",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": []
+        },
+        {
+            "rootDir": "game_DdzZJF",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_ddz_common",
+                "game_ZJF"
+            ]
+        },
+        {
+            "rootDir": "game_MJXzZJF3D",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_mj_common",
+                "game_ZJF"
+            ]
+        },
+        {
+            "rootDir": "game_DdzFK",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_ddz_common"
+            ]
+        },
+        {
+            "rootDir": "game_MjXzFK3D",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_mj_common"
+            ]
+        },
+        {
+            "rootDir": "game_CityMatch",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_ddz_common"
+            ]
+        },
+        {
+            "rootDir": "game_DdzMillion",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_ddz_common"
+            ]
+        },
+        {
+            "rootDir": "game_MiniGame",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_fishing_common"
+            ]
+        },
+        {
+            "rootDir": "game_FishingHall",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_fishing_common",
+                "normal_comfishing_common",
+                "game_MiniGame",
+                "game_Fishing"
+            ]
+        },
+        {
+            "rootDir": "game_Fishing",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_fishing_common",
+                "normal_comfishing_common",
+                "game_MiniGame",
+                "game_FishingHall"
+            ]
+        },
+        {
+            "rootDir": "game_FishingMatch",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_fishing_common",
+                "normal_comfishing_common"
+            ]
+        },
+        {
+            "rootDir": "game_Fishing3DHall",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_fishing3d_common",
+                "normal_comfishing_common",
+                "game_MiniGame",
+                "game_Fishing3D"
+            ]
+        },
+        {
+            "rootDir": "game_Fishing3D",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_fishing3d_common",
+                "normal_comfishing_common",
+                "game_MiniGame",
+                "game_Fishing3DHall"
+            ]
+        },
+        {
+            "rootDir": "game_FishingDR",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame"
+            ]
+        },
+        {
+            "rootDir": "game_Eliminate",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_xxl_common"
+            ]
+        },
+        {
+            "rootDir": "game_EliminateSH",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_xxl_common"
+            ]
+        },
+        {
+            "rootDir": "game_EliminateCS",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_xxl_common"
+            ]
+        },
+        {
+            "rootDir": "game_EliminateXY",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_xxl_common"
+            ]
+        },
+        {
+            "rootDir": "game_EliminateCJ",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_xxl_common"
+            ]
+        },
+        {
+            "rootDir": "game_EliminateSG",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_xxl_common",
+                "normal_fishing_common",
+                "game_EliminateXY",
+                "game_LHD",
+                "game_RXCQ",
+                "game_TTL",
+                "normal_rxcq_common",
+                "normal_mj_common"
+            ]
+        },
+        {
+            "rootDir": "game_EliminateBS",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_xxl_common"
+            ]
+        },
+        {
+            "rootDir": "game_EliminateFX",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_xxl_common"
+            ]
+        },
+        {
+            "rootDir": "game_QHBHall",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_qhb_common",
+                "game_MiniGame",
+                "game_QHB"
+            ]
+        },
+        {
+            "rootDir": "game_QHB",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_qhb_common",
+                "game_MiniGame",
+                "game_QHBHall"
+            ]
+        },
+        {
+            "rootDir": "game_LHDHall",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_lhd_common",
+                "normal_ddz_common",
+                "game_MiniGame",
+                "game_LHD"
+            ]
+        },
+        {
+            "rootDir": "game_LHD",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "normal_lhd_common",
+                "normal_ddz_common",
+                "game_MiniGame",
+                "game_LHDHall"
+            ]
+        },
+        {
+            "rootDir": "game_Zjd",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame"
+            ]
+        },
+        {
+            "rootDir": "game_Gobang",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame"
+            ]
+        },
+        {
+            "rootDir": "game_TTL",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame"
+            ]
+        },
+        {
+            "rootDir": "game_ZPG",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_zpg_common"
+            ]
+        },
+        {
+            "rootDir": "game_LWZB",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "game_LWZBHall",
+                "normal_lwzb_common"
+            ]
+        },
+        {
+            "rootDir": "game_LWZBHall",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_lwzb_common"
+            ]
+        },
+        {
+            "rootDir": "game_DMBJ",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame"
+            ]
+        },
+        {
+            "rootDir": "game_RXCQ",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": [
+                "game_MiniGame",
+                "normal_rxcq_common"
+            ]
+        },
+        {
+            "rootDir": "game_ScannerQRCode",
+            "useBasicVersion": true,
+            "isExtract": true,
+            "dependList": []
+        },
+        {
+            "rootDir": "game_FishingTest",
+            "useBasicVersion": false,
+            "isExtract": false,
+            "dependList": []
+        }
+    ]
+}

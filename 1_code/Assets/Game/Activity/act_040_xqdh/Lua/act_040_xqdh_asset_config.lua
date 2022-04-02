@@ -1,0 +1,1 @@
+return {"Act_040_XQDHItemBase","Act_040_XQDHManager","Act_040_XQDHPanel","act_040_xqdh_config","Act_040_XQDHPrefab","XQDZ_anim_prefab","by_bg_bzxlx2_activity_act_040_xqdh","by_bg_xqdz","by_imgf_xqdz","xqdh_bg_1","xqdh_bg_2","xqdh_btn_gz","xqdh_btn_hqxq","xqdh_icon_xl1","xqdh_icon_xl2","xqdh_icon_xl3"}

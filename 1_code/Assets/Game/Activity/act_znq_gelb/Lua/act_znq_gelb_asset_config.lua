@@ -1,0 +1,1 @@
+return {"activity_gift_gelb_config","ad_76","ad_76_4","ad_76_5","ad_76_6","ad_80","ad_80_1","ad_80_2","ad_80_3"}

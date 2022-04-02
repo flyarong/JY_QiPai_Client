@@ -1,0 +1,1 @@
+return {"ProductRatingPanel","ProductRatingPanel_xx","com_imgf_plyj"}

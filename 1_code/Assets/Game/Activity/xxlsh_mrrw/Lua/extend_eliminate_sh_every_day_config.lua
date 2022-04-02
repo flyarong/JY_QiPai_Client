@@ -1,0 +1,225 @@
+return {
+	base=
+	{
+		[1]=
+		{
+			index = 1,
+			name = "累计消10个酒碗",
+			task_id = 11501,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 100,
+			xc_id = 1,
+			icon = "shxxl_icon_1",
+		},
+		[2]=
+		{
+			index = 2,
+			name = "累计消10个酒坛",
+			task_id = 11502,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 200,
+			xc_id = 2,
+			icon = "shxxl_icon_2",
+		},
+		[3]=
+		{
+			index = 3,
+			name = "累计消10个铜钱",
+			task_id = 11503,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 300,
+			xc_id = 3,
+			icon = "shxxl_icon_3",
+		},
+		[4]=
+		{
+			index = 4,
+			name = "累计消10个银锭",
+			task_id = 11504,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 400,
+			xc_id = 4,
+			icon = "shxxl_icon_4",
+		},
+		[5]=
+		{
+			index = 5,
+			name = "累计消10个斧头",
+			task_id = 11505,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 500,
+			xc_id = 5,
+			icon = "shxxl_icon_5",
+		},
+		[6]=
+		{
+			index = 6,
+			name = "累计消30个酒碗",
+			task_id = 11506,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 250,
+			xc_id = 1,
+			icon = "shxxl_icon_1",
+		},
+		[7]=
+		{
+			index = 7,
+			name = "累计消30个酒坛",
+			task_id = 11507,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 500,
+			xc_id = 2,
+			icon = "shxxl_icon_2",
+		},
+		[8]=
+		{
+			index = 8,
+			name = "累计消30个铜钱",
+			task_id = 11508,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 750,
+			xc_id = 3,
+			icon = "shxxl_icon_3",
+		},
+		[9]=
+		{
+			index = 9,
+			name = "累计消30个银锭",
+			task_id = 11509,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 1000,
+			xc_id = 4,
+			icon = "shxxl_icon_4",
+		},
+		[10]=
+		{
+			index = 10,
+			name = "累计消30个斧头",
+			task_id = 11510,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 1250,
+			xc_id = 5,
+			icon = "shxxl_icon_5",
+		},
+		[11]=
+		{
+			index = 11,
+			name = "累计消60个酒碗",
+			task_id = 11511,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 500,
+			xc_id = 1,
+			icon = "shxxl_icon_1",
+		},
+		[12]=
+		{
+			index = 12,
+			name = "累计消60个酒坛",
+			task_id = 11512,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 1000,
+			xc_id = 2,
+			icon = "shxxl_icon_2",
+		},
+		[13]=
+		{
+			index = 13,
+			name = "累计消60个铜钱",
+			task_id = 11513,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 1500,
+			xc_id = 3,
+			icon = "shxxl_icon_3",
+		},
+		[14]=
+		{
+			index = 14,
+			name = "累计消60个银锭",
+			task_id = 11514,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 2000,
+			xc_id = 4,
+			icon = "shxxl_icon_4",
+		},
+		[15]=
+		{
+			index = 15,
+			name = "累计消60个斧头",
+			task_id = 11515,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 2500,
+			xc_id = 5,
+			icon = "shxxl_icon_5",
+		},
+		[16]=
+		{
+			index = 16,
+			name = "累计消60个酒碗（福卡）",
+			task_id = 11516,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 5,
+			xc_id = 1,
+			icon = "shxxl_icon_1",
+		},
+		[17]=
+		{
+			index = 17,
+			name = "累计消60个酒坛（福卡）",
+			task_id = 11517,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 10,
+			xc_id = 2,
+			icon = "shxxl_icon_2",
+		},
+		[18]=
+		{
+			index = 18,
+			name = "累计消60个铜钱（福卡）",
+			task_id = 11518,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 15,
+			xc_id = 3,
+			icon = "shxxl_icon_3",
+		},
+		[19]=
+		{
+			index = 19,
+			name = "累计消60个银锭（福卡）",
+			task_id = 11519,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 20,
+			xc_id = 4,
+			icon = "shxxl_icon_4",
+		},
+		[20]=
+		{
+			index = 20,
+			name = "累计消60个斧头（福卡）",
+			task_id = 11520,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 25,
+			xc_id = 5,
+			icon = "shxxl_icon_5",
+		},
+	},
+}

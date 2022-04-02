@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.tencent.tmgp.caiyunmj" android:versionName="1.0" android:versionCode="1" android:installLocation="preferExternal" android:hardwareAccelerated="true">
+<supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+<application android:name="UnityApplication" android:theme="@style/UnityThemeSelector" android:icon="@drawable/app_icon" android:label="@string/app_name" android:isGame="true" android:banner="@drawable/app_banner" android:hardwareAccelerated="true">
+    <activity android:label="@string/app_name" android:name="com.tencent.tmgp.caiyunmj.UnityPlayerActivity" android:screenOrientation="landscape" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density" android:hardwareAccelerated="true" android:allowBackup="false" >
+	<intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+	</intent-filter>
+
+	<intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="jingyu"
+            android:host="www.jyhd919.cn"/>
+	</intent-filter>
+	
+	<meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+    <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true" />
+    
+	</activity>
+
+    <activity
+        android:name="com.tencent.ysdk.module.realName.impl.RegisterRealNameActivity"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar">
+    </activity>
+
+    <activity
+        android:name="com.tencent.tauth.AuthActivity"
+        android:launchMode="singleTask"
+        android:noHistory="true">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="tencent1109655980" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.tencent.connect.common.AssistActivity"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+    <activity
+        android:name="com.tencent.tmgp.caiyunmj.wxapi.WXEntryActivity"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:excludeFromRecents="true"
+        android:exported="true"
+        android:label="WXEntryActivity"
+        android:launchMode="singleTop"
+        android:taskAffinity="com.tencent.tmgp.caiyunmj.diff"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:scheme="wx40ae5dfaaa09975d" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name="com.tencent.ysdk.module.user.impl.wx.qrcode.QRActivity">
+    </activity>
+
+    <activity
+        android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:screenOrientation="sensorLandscape"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    <activity
+        android:name="com.tencent.midas.wx.APMidasWXPayActivity"
+        android:exported="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+    <activity
+        android:name="com.tencent.midas.qq.APMidasQQWalletActivity"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:exported="true"
+        android:launchMode="singleTop"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+            <category android:name="android.intent.category.DEFAULT" />
+
+            <data android:scheme="qwallet100703379" />
+            <!-- TODO GAME 这里为米大师的默认配置，游戏不要修改 -->
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:windowSoftInputMode="stateAlwaysHidden" />
+
+    <!-- TODO GAME SDK 推送能力接入配置 START -->
+    <activity
+        android:name="com.tencent.android.tpush.XGPushActivity"
+        android:exported="false"
+        android:theme="@android:style/Theme.Translucent">
+        <intent-filter>
+            <action android:name="android.intent.action" />
+        </intent-filter>
+    </activity>
+    <receiver
+        android:name="com.tencent.android.tpush.XGPushReceiver"
+        android:process=":xg_service_v4">
+        <intent-filter android:priority="0x7fffffff">
+            <action android:name="com.tencent.android.tpush.action.SDK" />
+            <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+            <action android:name="android.intent.action.USER_PRESENT" />
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+        </intent-filter>
+    </receiver>
+
+    <receiver
+        android:name="com.tencent.ysdk.module.push.XGPushModule"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+            <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+        </intent-filter>
+    </receiver>
+
+    <service
+        android:name="com.tencent.android.tpush.service.XGPushServiceV4"
+        android:exported="true"
+        android:persistent="true"
+        android:process=":xg_service_v4" />
+
+    <service
+        android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="com.tencent.tmgp.caiyunmj.PUSH_ACTION" />
+        </intent-filter>
+    </service>
+    <service
+        android:name="com.tencent.android.tpush.service.XGDaemonService"
+        android:process=":xg_service_v4" />
+    <provider
+        android:name="com.tencent.android.tpush.XGPushProvider"
+        android:authorities="com.tencent.tmgp.caiyunmj.AUTH_XGPUSH"
+        android:exported="true" />
+
+    <provider
+        android:name="com.tencent.android.tpush.SettingsContentProvider"
+        android:authorities="com.tencent.tmgp.caiyunmj.TPUSH_PROVIDER"
+        android:exported="false" />
+
+    <provider
+        android:name="com.tencent.mid.api.MidProvider"
+        android:authorities="com.tencent.tmgp.caiyunmj.TENCENT.MID.V3"
+        android:exported="true"></provider>
+
+    <provider
+        android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+        android:authorities="${applicationId}.TTFileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+    </provider>
+
+    <provider
+        android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+        android:authorities="${applicationId}.TTMultiProvider"
+        android:exported="false" />
+
+    <meta-data
+        android:name="XG_V2_ACCESS_ID"
+        android:value="2100341177" />
+    <meta-data
+        android:name="XG_V2_ACCESS_KEY"
+        android:value="A9817FD8BGQH" />
+    <meta-data
+        android:name="XG_V4_CHANNEL_ID"
+        android:value="1234567" />
+
+    <!-- TODO GAME SDK 推送能力接入配置 End -->
+    
+	<meta-data android:name="unity.build-id" android:value="43a52511-dcf8-45aa-ba0e-3964ee297299" />
+    <meta-data android:name="unity.splash-mode" android:value="0" />
+    <meta-data android:name="unity.splash-enable" android:value="True" />
+    <meta-data android:name="android.max_aspect" android:value="2.1" />
+</application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" />
+
+    <!-- <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26" />
+  <uses-feature android:glEsVersion="0x00020000" />
+  <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+  <uses-permission android:name="android.hardware.camera" android:required="false" />
+
+</manifest>

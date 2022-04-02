@@ -1,0 +1,3 @@
+#import<QuartzCore/CADisplayLink.h>
+@interface IOSAlbumCameraController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIPopoverPresentationControllerDelegate>
+@end

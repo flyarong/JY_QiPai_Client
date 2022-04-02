@@ -1,0 +1,1 @@
+将这个工程导入eclipse中并编写Android端相关代码，然后导出jar文件放入unity工程中使用，这里注意配置文件 AndroidManifest 的权限配置，和微信jar库 libammsdk.jar 文件

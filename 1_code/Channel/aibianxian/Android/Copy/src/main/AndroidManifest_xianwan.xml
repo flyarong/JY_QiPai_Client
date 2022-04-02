@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jingyu.rrddz" xmlns:tools="http://schemas.android.com/tools" android:installLocation="internalOnly">
+  <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+  <application android:name="UnityApplication" android:theme="@style/UnityThemeSelector" android:icon="@drawable/app_icon" android:label="@string/app_name"  android:usesCleartextTraffic="true" android:requestLegacyExternalStorage="true">
+    <activity android:label="@string/app_name" android:screenOrientation="fullSensor" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density" android:hardwareAccelerated="true" android:name="com.jingyu.rrddz.UnityPlayerActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+	<intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="wyzaly"
+            android:host="www.jyhd919.cn"/>
+	</intent-filter>
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+    <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true" />
+    </activity>
+	<activity android:name="com.jingyu.rrddz.wxapi.WXEntryActivity"
+        android:label="@string/app_name"
+        android:exported="true"/>
+	<provider
+        android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+        android:authorities="com.jingyu.rrddz.TTFileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+    </provider>
+
+    <provider
+        android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+        android:authorities="com.jingyu.rrddz.TTMultiProvider"
+        android:exported="false" />
+    <meta-data android:name="unity.build-id" android:value="72e30243-efb7-4c30-8014-d8ae5dfeba35" />
+    <meta-data android:name="unity.splash-mode" android:value="0" />
+    <meta-data android:name="unity.splash-enable" android:value="True" />
+    <meta-data android:name="com.openinstall.APP_KEY"
+            android:value="wyzaly"/>
+  </application>
+  <uses-feature android:glEsVersion="0x00020000" />
+  <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+	<!-- <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+  <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+  <uses-feature android:name="android.hardware.location" android:required="false" />
+  <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+  <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+  <uses-feature android:name="android.hardware.microphone" android:required="false" />
+  <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+</manifest>

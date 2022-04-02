@@ -1,0 +1,1 @@
+return {"activity_task_gold_xxl_config","SYSZNQXXLDDZEnterPrefab","activity_bg_pic11","ddz_imgf_hlsq_activity_act_znq_xxldzz","xxl_btn_xcdzz","zjd_btn_shl_activity_act_znq_xxldzz"}

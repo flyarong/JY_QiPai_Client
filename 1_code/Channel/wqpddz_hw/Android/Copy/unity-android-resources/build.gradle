@@ -1,0 +1,42 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		google()
+		jcenter()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:3.2.0'
+	}
+}
+
+apply plugin: 'android-library'
+
+dependencies {
+	implementation fileTree(include: ['*.jar'], dir: 'bin')
+	implementation fileTree(include: ['*.jar'], dir: 'libs')
+}
+
+android {
+	sourceSets {
+		main {
+			manifest.srcFile 'AndroidManifest.xml'
+			//java.srcDirs = ['src']
+			res.srcDirs = ['res']
+			assets.srcDirs = ['assets']
+			jniLibs.srcDirs = ['libs']
+		}
+	}
+	compileSdkVersion 28
+	buildToolsVersion '28.0.3'
+	defaultConfig {
+		targetSdkVersion 28
+	}
+	lintOptions {
+		abortOnError false
+	}
+	buildTypes {
+		debug {
+			debuggable false
+		}
+	}
+}

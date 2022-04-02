@@ -1,0 +1,1 @@
+return {"activity_bg_pic12"}

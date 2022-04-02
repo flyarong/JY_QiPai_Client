@@ -1,0 +1,225 @@
+return {
+	base=
+	{
+		[1]=
+		{
+			index = 1,
+			name = "累计消10个铜板",
+			task_id = 11521,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 100,
+			xc_id = 1,
+			icon = "fxgz_icon_tb",
+		},
+		[2]=
+		{
+			index = 2,
+			name = "累计消10个银锭",
+			task_id = 11522,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 200,
+			xc_id = 2,
+			icon = "fxgz_icon_yd",
+		},
+		[3]=
+		{
+			index = 3,
+			name = "累计消10个金砖",
+			task_id = 11523,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 300,
+			xc_id = 3,
+			icon = "fxgz_icon_jz",
+		},
+		[4]=
+		{
+			index = 4,
+			name = "累计消10个玉佩",
+			task_id = 11524,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 400,
+			xc_id = 4,
+			icon = "fxgz_icon_yp",
+		},
+		[5]=
+		{
+			index = 5,
+			name = "累计消10个夜明珠",
+			task_id = 11525,
+			need_process = 20,
+			award_type = "jing_bi",
+			award_count = 500,
+			xc_id = 5,
+			icon = "fxgz_icon_ymz",
+		},
+		[6]=
+		{
+			index = 6,
+			name = "累计消30个铜板",
+			task_id = 11526,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 250,
+			xc_id = 1,
+			icon = "fxgz_icon_tb",
+		},
+		[7]=
+		{
+			index = 7,
+			name = "累计消30个银锭",
+			task_id = 11527,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 500,
+			xc_id = 2,
+			icon = "fxgz_icon_yd",
+		},
+		[8]=
+		{
+			index = 8,
+			name = "累计消30个金砖",
+			task_id = 11528,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 750,
+			xc_id = 3,
+			icon = "fxgz_icon_jz",
+		},
+		[9]=
+		{
+			index = 9,
+			name = "累计消30个玉佩",
+			task_id = 11529,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 1000,
+			xc_id = 4,
+			icon = "fxgz_icon_yp",
+		},
+		[10]=
+		{
+			index = 10,
+			name = "累计消30个夜明珠",
+			task_id = 11530,
+			need_process = 50,
+			award_type = "jing_bi",
+			award_count = 1250,
+			xc_id = 5,
+			icon = "fxgz_icon_ymz",
+		},
+		[11]=
+		{
+			index = 11,
+			name = "累计消60个铜板",
+			task_id = 11531,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 500,
+			xc_id = 1,
+			icon = "fxgz_icon_tb",
+		},
+		[12]=
+		{
+			index = 12,
+			name = "累计消60个银锭",
+			task_id = 11532,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 1000,
+			xc_id = 2,
+			icon = "fxgz_icon_yd",
+		},
+		[13]=
+		{
+			index = 13,
+			name = "累计消60个金砖",
+			task_id = 11533,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 1500,
+			xc_id = 3,
+			icon = "fxgz_icon_jz",
+		},
+		[14]=
+		{
+			index = 14,
+			name = "累计消60个玉佩",
+			task_id = 11534,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 2000,
+			xc_id = 4,
+			icon = "fxgz_icon_yp",
+		},
+		[15]=
+		{
+			index = 15,
+			name = "累计消60个夜明珠",
+			task_id = 11535,
+			need_process = 100,
+			award_type = "jing_bi",
+			award_count = 2500,
+			xc_id = 5,
+			icon = "fxgz_icon_ymz",
+		},
+		[16]=
+		{
+			index = 16,
+			name = "累计消60个铜板（红包）",
+			task_id = 11536,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 5,
+			xc_id = 1,
+			icon = "fxgz_icon_tb",
+		},
+		[17]=
+		{
+			index = 17,
+			name = "累计消60个银锭（红包）",
+			task_id = 11537,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 10,
+			xc_id = 2,
+			icon = "fxgz_icon_yd",
+		},
+		[18]=
+		{
+			index = 18,
+			name = "累计消60个金砖（红包）",
+			task_id = 11538,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 15,
+			xc_id = 3,
+			icon = "fxgz_icon_jz",
+		},
+		[19]=
+		{
+			index = 19,
+			name = "累计消60个玉佩（红包）",
+			task_id = 11539,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 20,
+			xc_id = 4,
+			icon = "fxgz_icon_yp",
+		},
+		[20]=
+		{
+			index = 20,
+			name = "累计消60个夜明珠（红包）",
+			task_id = 11540,
+			need_process = 100,
+			award_type = "shop_gold_sum",
+			award_count = 25,
+			xc_id = 5,
+			icon = "fxgz_icon_ymz",
+		},
+	},
+}

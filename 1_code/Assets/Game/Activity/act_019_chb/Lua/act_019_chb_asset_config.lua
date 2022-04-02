@@ -1,0 +1,1 @@
+return {"chb_anim","@chai_img","Act_019_CHBEnterPrefab","Act_019_CHBManager","Act_019_CHBPanel","Act_019_CHBTaskItem","act_019_chb_config","chb_bg_bg1","chb_bg_bg2","chb_bg_dt","chb_bg_dt2","chb_bg_g","chb_bg_hb","chb_bg_hw","chb_bg_hw1","chb_icon_1","chb_icon_hbc","chb_icon_hbg","chb_icon_hbk","chb_imgf_ttchb 1","chb_imgf_ttchb","com_icon_num","dlfl_dk_bg3_activity_act_019_chb"}

@@ -1,0 +1,22 @@
+
+require "Game.CommonPrefab.Lua.game_light_config"
+require "Game.CommonPrefab.Lua.FullSceneJH"
+require "Game.CommonPrefab.Lua.RectJH"
+require "Game.CommonPrefab.Lua.HintPanel"
+require "Game.CommonPrefab.Lua.PayPanel"
+require "Game.CommonPrefab.Lua.LittleTips"
+require "Game.CommonPrefab.Lua.SpineManager"
+require "Game.CommonPrefab.Lua.UIPaySuccess"
+require "Game.CommonPrefab.Lua.PayHintPanel"
+require "Game.CommonPrefab.Lua.ComFlyAnim"
+require "Game.CommonPrefab.Lua.DoTweenSequence"
+require "Game.CommonPrefab.Lua.HintCopyPanel"
+require "Game.CommonPrefab.Lua.AwardPrefab"
+
+require "Game.CommonPrefab.Lua.GameButtonPanel"
+require "Game.CommonPrefab.Lua.MixAwardPopManager"
+
+require "Game.CommonPrefab.Lua.ExtPanel"
+require "Game.CommonPrefab.Lua.ComImageWordsPrefab"
+require "Game.CommonPrefab.Lua.ComGuideToolPanel"
+require "Game.CommonPrefab.Lua.TimerExt"

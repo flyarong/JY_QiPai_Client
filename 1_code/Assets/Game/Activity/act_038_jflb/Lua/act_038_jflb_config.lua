@@ -1,0 +1,75 @@
+return {
+	config=
+	{
+	
+		[1]=
+		{
+			line = 1,
+			gift_key = "gift_cglb_mini",
+			temp = "T4",
+			gift_id = {10436,10437,10438,},
+			bg_img = "jflb_bg_1_BYCOPY_fbfbba42-4a31-402f-a428-3ab1348ba0eb",
+			db_img = "zblb_bg_1",
+			name_c = "FFFFFFFF",
+			name_outline = "BB301F",
+			font_c = "FFFFFFFF",
+			outline_c = "C44C4B",
+			gift_c = "FFFFFFFF",
+			pay_name = {"6万鲸币","1万鱼币","积分翻倍领","10万鲸币","2万鱼币","积分翻倍领","18万鲸币","3万鱼币","积分翻倍领",},
+			icon_img = {"fkfl_btn_bx","com_award_icon_yb1","com_award_icon_jf2","fkfl_btn_bx2","com_award_icon_yb1","com_award_icon_jf2","fkfl_btn_bx3","com_award_icon_yb1","com_award_icon_jf2",},
+			isOnOff = 1,
+		},
+		[2]=
+		{
+			line = 2,
+			gift_key = "gift_cglb_mini",
+			temp = "T4",
+			gift_id = {10439,10440,10441,},
+			bg_img = "jflb_bg_1_BYCOPY_fbfbba42-4a31-402f-a428-3ab1348ba0eb",
+			db_img = "zblb_bg_1",
+			name_c = "FFFFFFFF",
+			name_outline = "BB301F",
+			font_c = "FFFFFFFF",
+			outline_c = "C44C4B",
+			gift_c = "FFFFFFFF",
+			pay_name = {"18万鲸币","7000鱼币","积分翻倍领","30万鲸币","12000鱼币","积分翻倍领","48万鲸币","18000鱼币","积分翻倍领",},
+			icon_img = {"fkfl_btn_bx","com_award_icon_yb1","com_award_icon_jf2","fkfl_btn_bx2","com_award_icon_yb1","com_award_icon_jf2","fkfl_btn_bx3","com_award_icon_yb1","com_award_icon_jf2",},
+			isOnOff = 1,
+		},
+		[3]=
+		{
+			line = 3,
+			gift_key = "gift_cglb_mini",
+			temp = "T4",
+			gift_id = {10442,10443,10444,},
+			bg_img = "jflb_bg_1_BYCOPY_fbfbba42-4a31-402f-a428-3ab1348ba0eb",
+			db_img = "zblb_bg_1",
+			name_c = "FFFFFFFF",
+			name_outline = "BB301F",
+			font_c = "FFFFFFFF",
+			outline_c = "C44C4B",
+			gift_c = "FFFFFFFF",
+			pay_name = {"48万鲸币","18000鱼币","积分翻倍领","98万鲸币","38000鱼币","积分翻倍领","198万鲸币","8万鱼币","积分翻倍领",},
+			icon_img = {"fkfl_btn_bx","com_award_icon_yb1","com_award_icon_jf2","fkfl_btn_bx2","com_award_icon_yb1","com_award_icon_jf2","fkfl_btn_bx3","com_award_icon_yb1","com_award_icon_jf2",},
+			isOnOff = 1,
+		},
+		[4]=
+		{
+			line = 4,
+			gift_key = "gift_cglb_mini",
+			temp = "T4",
+			gift_id = {10445,10446,10447,},
+			bg_img = "jflb_bg_1_BYCOPY_fbfbba42-4a31-402f-a428-3ab1348ba0eb",
+			db_img = "zblb_bg_1",
+			name_c = "FFFFFFFF",
+			name_outline = "BB301F",
+			font_c = "FFFFFFFF",
+			outline_c = "C44C4B",
+			gift_c = "FFFFFFFF",
+			pay_name = {"98万鲸币","38000鱼币","积分翻倍领","198万鲸币","8万鱼币","积分翻倍领","498万鲸币","18万鱼币","积分翻倍领",},
+			icon_img = {"fkfl_btn_bx","com_award_icon_yb1","com_award_icon_jf2","fkfl_btn_bx2","com_award_icon_yb1","com_award_icon_jf2","fkfl_btn_bx3","com_award_icon_yb1","com_award_icon_jf2",},
+			isOnOff = 1,
+		},		
+	},
+
+}

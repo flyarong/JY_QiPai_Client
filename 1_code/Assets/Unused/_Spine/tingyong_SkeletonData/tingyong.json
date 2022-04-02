@@ -1,0 +1,54 @@
+{
+"skeleton": { "hash": "4p6wZFqizZ3apl97gNIzik1UI0g", "spine": "3.6.53", "width": 386.61, "height": 276.38, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "ddz_pattern_icon_dawang", "parent": "root", "length": 222.54, "rotation": 76.15, "x": 128.49, "y": -1.95 },
+	{ "name": "ddz_pattern_icon_ting", "parent": "root", "length": 246.62, "rotation": 108.29, "x": 61.16, "y": -23.05 }
+],
+"slots": [
+	{ "name": "斗地主模式", "bone": "root" },
+	{ "name": "ddz_pattern_btn_3", "bone": "root" },
+	{ "name": "ddz_pattern_icon_dawang", "bone": "ddz_pattern_icon_dawang", "attachment": "ddz_pattern_icon_dawang" },
+	{ "name": "ddz_pattern_icon_ting", "bone": "ddz_pattern_icon_ting", "attachment": "ddz_pattern_icon_ting" }
+],
+"skins": {
+	"default": {
+		"ddz_pattern_icon_dawang": {
+			"ddz_pattern_icon_dawang": { "x": 135.95, "y": -2.97, "rotation": -76.15, "width": 224, "height": 244 }
+		},
+		"ddz_pattern_icon_ting": {
+			"ddz_pattern_icon_ting": { "x": 143.2, "y": 6.23, "rotation": -108.29, "width": 242, "height": 272 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"ddz_pattern_icon_ting": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.6667, "angle": -1.39 },
+					{ "time": 3.3333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1.6667, "x": -1.68, "y": -0.48 },
+					{ "time": 3.3333, "x": 0, "y": 0 }
+				]
+			},
+			"ddz_pattern_icon_dawang": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1.6667, "angle": 2.32 },
+					{ "time": 3.3333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1.6667, "x": 2.03, "y": -0.39 },
+					{ "time": 3.3333, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
